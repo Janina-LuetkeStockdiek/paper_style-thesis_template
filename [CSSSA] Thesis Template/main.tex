@@ -13,7 +13,7 @@
 % d) If you are writing a thesis jointly with other students, set it to true for (seminar) paper with multiple authors.
 
 \documentclass[
-    language=german, % german english
+    language=english, % german english
     thesis=bachelor, % seminar bachelor master
     supervisor=postdoc, % supervisor postdoc
     multiauthor=false, % true false 
@@ -37,6 +37,14 @@
 % Submission Date
 \date{01.01.2025}
 
+% Declare whether you used any AI-powered tools in your thesis. It will be added to the declaration of authorship which you have to sign. Default is given below, delete and add your text if you used any tools: 
+
+\declarationTool{I hereby declare that I have not used any unauthorized assistance in the preparation of my thesis. In particular, I declare that I have not used any automatic writing aids such as \textit{Grammarly}, \textit{ChatGPT} or similar software tools to create, edit, or change essential parts of my thesis.}
+
+% Examples for alternatives (If you used a tool for other purposes, add them below): 
+% I hereby declare that I have used [Tool xyz] to check for spelling, grammar or plagiarism. .... 
+
+
 % ============================================================
 
 
@@ -52,6 +60,8 @@
 \begin{document}
 \maketitlepage
 \maketitle
+
+% DON'T add a table of contents – that is not required for this thesis !!! Also, do not change the format of the template, just the content! 
 
 \begin{abstract}
     \lipsum[1]

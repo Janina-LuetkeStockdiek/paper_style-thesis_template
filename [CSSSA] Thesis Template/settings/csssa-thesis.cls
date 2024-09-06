@@ -116,15 +116,18 @@
   \fancyhf{}%
 }
 
+\newcommand{\declarationTool}[1]{\def\@declarationTool{#1}}
+
+
 \newcommand{\backmatter}{
     \clearpage
     \newpage
     \onecolumn 
-    \setlength{\parskip}{8pt}
     \onehalfspacing
     \declaration
+    \noindent \@declarationTool
     \consent
-    \setlength{\parskip}{10pt}%
+    \setlength{\parskip}{6pt}%
     \thispagestyle{empty}
     \clearpage
 }
@@ -260,11 +263,8 @@
         \newpage
         \thispagestyle{empty}
         \section*{\LARGE Declaration of Authorship}
-        \vskip 1em
             \noindent  \ifcsssa@multiauthor We hereby declare that, to the best of our knowledge and belief, this thesis titled \textit{\@title} is our own, independent work. Below, we confirm that each significant contribution to and quotation in this thesis that originates from the work or works of others is indicated by proper use of citation and references; this also holds for tables and graphical works.
             \noindent  \else I hereby declare that, to the best of my knowledge and belief, this thesis titled \textit{\@title} is my own, independent work. Below, I confirm that each significant contribution to and quotation in this thesis that originates from the work or works of others is indicated by proper use of citation and references; this also holds for tables and graphical works.
-            \fi
-            \vskip 1em
 
     }
     
@@ -415,7 +415,7 @@
         \Large 
         \thispagestyle{empty}
         \section*{\LARGE Abschließende Erklärung}
-        \vspace{-4mm}
+        \vspace{-2mm}
         \noindent \ifcsssa@multiauthor Wir versichern mit der Unterschrift unten, dass wir die Arbeit \textit{\@title} selbständig und ohne fremde Hilfe angefertigt haben und dass wir alle von anderen Autoren wörtlich übernommenen Stellen wie auch die sich an die Gedankengänge anderer Autoren eng anlehnenden Ausführungen unserer Arbeit besonders gekennzeichnet und die Quellen zitiert haben; dies gilt auch für Tabellen, Skizzen, Zeichnungen, bildliche Darstellungen usw.
         \noindent  \else Ich versichere mit der Unterschrift unten, dass ich meine Arbeit \textit{\@title} selbständig und ohne fremde Hilfe angefertigt habe und dass ich alle von anderen Autoren wörtlich übernommenen Stellen wie auch die sich an die Gedankengänge anderer Autoren eng anlehnenden Ausführungen meiner Arbeit besonders gekennzeichnet und die Quellen zitiert habe; dies gilt auch für Tabellen, Skizzen, Zeichnungen, bildliche Darstellungen usw.
         \vspace{-2mm}
